@@ -3,6 +3,7 @@ import "./App.css";
 import Feature from "./components/Feature";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
+import Price from "./components/Price";
 import Service from "./components/Service";
 
 const Container = styled.div`
@@ -49,6 +50,14 @@ const ServiceShape = styled.div`
 `;
 
 
+const PriceShape = styled.div`
+  ${Shape}
+
+  clip-path: polygon(37% 0, 100% 0, 100% 100%, 67% 100%);
+  background-color: crimson;
+`;
+
+
 function App() {
   return (
     <>
@@ -66,6 +75,11 @@ function App() {
       <Container>
         <Service/>
         <ServiceShape/>
+      </Container>
+
+      <Container>
+        <Price/>
+        <PriceShape/>
       </Container>
     </>
   );
