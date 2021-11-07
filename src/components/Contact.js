@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import map from "../img/map.png"
-import phone from "../img/phone.png"
-import send from "../img/send.png"
-
+import map from "../img/map.png";
+import phone from "../img/phone.png";
+import send from "../img/send.png";
 
 const Container = styled.div`
   height: 90%;
@@ -158,20 +157,20 @@ const Contact = () => {
           </Form>
         </FormContainer>
         <AddressContainer>
-            <AddressItem>
-                <Icon src={map} />
-                <Text>9203, Pocket Gate, Khulna</Text>
-            </AddressItem>
-            <AddressItem>
-                <Icon src={phone} />
-                <Text>+880 1745 761260</Text>
-                <Text>+880 1521 544397</Text>
-            </AddressItem>
-            <AddressItem>
-                <Icon src={send} />
-                <Text>muneem914@gmail.com</Text>
-                <Text>muneemabir@gmail.com</Text>
-            </AddressItem>
+          <AddressItem>
+            <Icon src={map} />
+            <Text>9203, Pocket Gate, Khulna</Text>
+          </AddressItem>
+          <AddressItem>
+            <Icon src={phone} />
+            <Text>+880 1745 761260</Text>
+            <Text>+880 1521 544397</Text>
+          </AddressItem>
+          <AddressItem>
+            <Icon src={send} />
+            <Text>muneem914@gmail.com</Text>
+            <Text>muneemabir@gmail.com</Text>
+          </AddressItem>
         </AddressContainer>
       </Wrapper>
     </Container>

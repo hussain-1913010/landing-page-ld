@@ -43,14 +43,12 @@ const FeatureShape = styled.div`
   background-color: pink;
 `;
 
-
 const ServiceShape = styled.div`
   ${Shape}
 
   clip-path: polygon(0 0, 37% 0, 37% 100%, 0% 100%);
   background-color: #f88497;
 `;
-
 
 const PriceShape = styled.div`
   ${Shape}
@@ -59,34 +57,34 @@ const PriceShape = styled.div`
   background-color: crimson;
 `;
 
-
 function App() {
+  const smallScreen = window.screen.width <= 480 ? true : false;
   return (
     <>
       <Container>
         <Navbar />
         <Intro />
-        <IntroShape/>
+        <IntroShape />
       </Container>
 
       <Container>
-        <Feature/>
-        <FeatureShape/>
+        <Feature />
+        <FeatureShape />
       </Container>
 
       <Container>
-        <Service/>
-        <ServiceShape/>
+        <Service />
+        {!smallScreen && <ServiceShape />}
       </Container>
 
       <Container>
-        <Price/>
-        <PriceShape/>
+        <Price />
+        <PriceShape />
       </Container>
 
       <Container>
-        <Contact/>
-        <Footer/>
+        <Contact />
+        <Footer />
       </Container>
     </>
   );

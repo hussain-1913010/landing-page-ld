@@ -1,6 +1,5 @@
-import React from 'react'
-import styled from 'styled-components';
-
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   height: 10%;
@@ -37,21 +36,22 @@ const Copyright = styled.span`
   }
 `;
 
-
 const Footer = () => {
-    return (
-        <Container>
-            <Wrapper>
-                <List>
-                    <ListItem>Guide</ListItem>
-                    <ListItem>Support</ListItem>
-                    <ListItem>Api</ListItem>
-                    <ListItem>Community</ListItem>
-                </List>
-                <Copyright>Copyright | All right reserved to developer muneem</Copyright>
-            </Wrapper>
-        </Container>
-    )
-}
+  return (
+    <Container>
+      <Wrapper>
+        <List>
+          <ListItem>Guide</ListItem>
+          <ListItem>Support</ListItem>
+          <ListItem>Api</ListItem>
+          <ListItem>Community</ListItem>
+        </List>
+        <Copyright>
+          Copyright | All right reserved to developer muneem
+        </Copyright>
+      </Wrapper>
+    </Container>
+  );
+};
 
-export default Footer
+export default Footer;
